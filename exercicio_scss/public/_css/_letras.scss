@@ -1,0 +1,9 @@
+@mixin letras {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(126, 125, 119);
+}
+
+p {
+    @include letras;    
+}

@@ -1,0 +1,45 @@
+.sombra {
+  text-shadow: 2px 1px 1px #ccc;
+  text-decoration: underline;
+  color: lightblue;
+}
+
+h1 {
+  color: lightblue;
+}
+
+a {
+  color: white;
+  background-color: lime;
+}
+
+div p {
+  background-color: rgb(235, 225, 225);
+}
+div p b {
+  color: green;
+}
+
+body {
+  background-color: rgb(235, 225, 225);
+  margin: 20%;
+}
+body else {
+  color: rgb(78, 78, 155);
+  background-color: lightskyblue;
+}
+
+#id-1 {
+  font-size: 17px;
+  background-color: #ff3333;
+}
+
+#id-2 {
+  font-size: 21px;
+  background-color: #ff6666;
+}
+
+#id-3 {
+  font-size: 25px;
+  background-color: #ff9999;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+$corDiv: cornsilk;
+$tamanho: 13px;
+
+// variável i sai de 1 e vai até 3
+
+// criar arquivo div
+@for $i from 1 through 3 {
+    $nome: '#id-' + $i;
+    #{$nome} {
+        font-size: $tamanho + ($i*4);
+        //tamanho vai aumetar 13 + 4 = 17 -> 13 + 8 = 21
+        background-color: lighten($corDiv, $i * 10%);
+        // fazer um degrade com cor clara
+    }
+}

@@ -1,0 +1,47 @@
+@import 'base', 'formatacaotxt';
+
+$cor2: 'ligth' + grey; // Cálculo para cor tem que ser sem aspas
+$background: rgb(235, 225, 225);
+// $tamanho: '17';
+
+@mixin fundoP($color){
+    background-color: $color;
+}   
+
+div{
+    p {
+        @include fundoP($background);
+        b {
+            color: green;
+        }
+    }
+}
+
+
+body {
+    @include fundoP($background);
+    @if ($background == black) {
+        color: #{$cor2}; // código para tirar as aspas
+        // font-size: #{$tamanho+px}; //tirando as aspas e adicionando o pixels
+    } else {
+        color: rgb(78, 78, 155);
+        background-color: lightskyblue;
+    }    
+        margin: 10%*2;
+}
+
+$corDiv: red;
+$tamanho: 13px;
+
+// variável i sai de 1 e vai até 3
+
+// criar arquivo div
+@for $i from 1 through 3 {
+    $nome: '#id-' + $i;
+    #{$nome} {
+        font-size: $tamanho + ($i*4);
+        //tamanho vai aumetar 13 + 4 = 17 -> 13 + 8 = 21
+        background-color: lighten($corDiv, $i * 10%);
+        // fazer um degrade com cor clara
+    }
+}

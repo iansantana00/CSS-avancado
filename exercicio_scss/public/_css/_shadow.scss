@@ -1,0 +1,26 @@
+
+$color: cornsilk; 
+$corDiv: red;
+$tamanho: 10px;
+
+@mixin shadow {
+    -webkit-box-shadow: inset -1px 3px 8px 5px cornsilk, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: inset -1px 3px 8px 5px cornsilk, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+div {
+    text-align: center;
+    button {
+        @include shadow;
+        }
+        a {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+}
+
+
+
+h1 {
+    background-color: $color;
+    @include shadow;
+}

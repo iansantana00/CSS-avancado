@@ -1,0 +1,68 @@
+div {
+  text-align: center;
+}
+div button {
+  box-shadow: inset -1px 3px 8px 5px cornsilk, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+div a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  background-color: cornsilk;
+  box-shadow: inset -1px 3px 8px 5px cornsilk, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+p {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(126, 125, 119);
+}
+
+#id-1 {
+  font-size: 17px;
+  background-color: white;
+}
+
+#id-2 {
+  font-size: 21px;
+  background-color: white;
+}
+
+#id-3 {
+  font-size: 25px;
+  background-color: white;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-size: 37.4px;
+}
+h1 else, h2 else {
+  font-size: 17px;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: small-caps;
+}
+h3 else {
+  font-size: 17px;
+}
+
+body {
+  background-color: rgb(238, 235, 235);
+  /* Background pattern from Toptal Subtle Patterns */
+  background-image: url("logo.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: 150%;
+  background-position-x: center;
+  background-size: 120px 120px;
+}/*# sourceMappingURL=style.css.map */

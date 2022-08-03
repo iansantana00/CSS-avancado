@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet/less" type="text/css" href="./_css/style.less" />
+    <meta charset="utf-8">
+    <title>Outro Texto</title>
+</head>
+<body>
+    <h1>Texto 2</h1>
+
+    <h2></h2>
+
+    <p>
+        <b>Lorem ipsum</b>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nisi augue, nec interdum odio dapibus id. Nunc viverra in massa at pretium. Etiam sed auctor erat, vitae condimentum tortor. Aliquam nec suscipit augue, sollicitudin convallis nunc. Curabitur vel libero mollis, suscipit enim ac, pulvinar libero. Donec elementum, mauris id varius tristique, justo velit varius dolor, nec facilisis nisi dui eget eros. Fusce nec nunc tincidunt, laoreet mi sed, euismod dui. Etiam sed interdum velit, sed eleifend lacus. Donec quis luctus odio.
+    </p>
+
+
+    <a href="/">Texto</a>
+
+    <!--Less-->  
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script>
+        less = {
+            env: "development" /* pode ser prodution - se for development mostra erros no 
+            console */
+        }
+    </script>    
+
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('generate-sw.js');
+    }
+    </script>
+</body>
+</html>

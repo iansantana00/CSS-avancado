@@ -1,0 +1,68 @@
+@tamanhoFonte: 15px;
+@position_y: 1.5;
+
+.letras() {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(126, 125, 119);
+    
+}
+
+.letras2(@aumento) {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    font-size: 30px;
+    font-style: normal;
+    font-variant: small-caps;
+    & when (@aumento = 's') {
+        font-size: @tamanhoFonte * 2.2; 
+    } else {
+        font-size: @tamanhoFonte;
+    }
+}
+
+.shadow {
+    -webkit-box-shadow: inset -1px 3px 8px 5px cornsilk, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: inset -1px 3px 8px 5px cornsilk, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+p{
+    .letras();
+}
+
+h1, h2 {
+    .letras2('s');
+}
+
+h3 {
+    .letras2('');
+}
+    
+div {
+    text-align: center;
+    button {
+        .shadow;
+        margin: 0 15px;
+        width: 90px;
+        height: 30px;
+        a {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+}
+
+h1 {
+    background-color: cornsilk;
+    .shadow;
+}
+
+body{
+    background-color: rgb(238, 235, 235);
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: 
+        url("logo.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: percentage(@position_y);
+    background-position-x: center; 
+    background-size: 120px 120px; 
+}
+

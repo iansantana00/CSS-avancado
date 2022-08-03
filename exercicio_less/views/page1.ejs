@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet/less" type="text/css" href="./_css/style.less" />
+    <meta charset="utf-8">
+    <title>Page 1</title>
+</head>
+<body>
+    <h1>Page 1</h1>
+
+    <div>
+    <button><a href="/">Home</a></button>
+    <button><a href="/page2">Page 2</a></button>
+    <button><a href="/page3">Page 3</a></button>
+</div>
+
+    <h2>Texto 1</h2>
+
+    <p>
+        <b>Donec non feugiat dui.</b>
+         Sed eu convallis odio, vel ultricies velit. Nam sollicitudin ante et congue tincidunt. Donec molestie nulla vitae est sollicitudin, et fringilla arcu tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris pretium dolor tincidunt risus laoreet auctor. Aliquam eget facilisis eros, id scelerisque tellus.    
+    </p>
+    <p>
+        Ut augue erat, interdum a ligula vel, dignissim fermentum quam. Sed egestas enim sed nibh viverra, sit amet dignissim leo ultricies. Phasellus nec purus vestibulum dui tempus porttitor non at magna. Praesent consequat purus eu laoreet pellentesque. Proin eu sollicitudin risus. Phasellus sed posuere sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vitae mi ac est commodo rutrum vitae id eros. Nunc velit orci, faucibus at ultrices in, porttitor et tortor. Praesent a dignissim augue, vitae fringilla ex. Ut gravida posuere feugiat. Proin quis feugiat orci. Proin tristique nulla a est tempor, vel consectetur leo fermentum. Duis tempor vehicula mauris, ut rutrum risus rhoncus et. Mauris quis fringilla orci. Etiam augue mauris, vehicula at porta et, condimentum id nisi.
+
+Donec viverra ultrices urna, non pharetra tellus efficitur in. Quisque elementum, lacus sed gravida malesuada, ante arcu maximus nulla, id ultricies sem sem id justo. Cras convallis velit eget dui faucibus, vitae fringilla mi vestibulum. Proin varius, erat eget semper finibus, nisi velit vestibulum turpis, et iaculis felis elit at metus. Proin bibendum urna eu nisi pharetra laoreet non egestas lorem. Integer nec orci id turpis vestibulum auctor. Pellentesque non pharetra quam.
+
+Donec sagittis, orci a fermentum rhoncus, quam dolor consequat ligula, vitae tempor massa nulla a mauris. Nunc blandit, lacus quis sollicitudin elementum, felis metus finibus nunc, nec malesuada leo eros eu tortor. Vivamus eu lectus mollis, rutrum diam quis, ultrices leo. Morbi felis enim, suscipit facilisis varius non, vulputate id lectus. Etiam mauris enim, finibus vel dui quis, rutrum tincidunt risus. Pellentesque auctor velit et viverra varius. Nullam tellus ligula, aliquet in tortor sed, auctor scelerisque ipsum. Fusce bibendum placerat sapien vel hendrerit. Suspendisse sit amet turpis metus. Aenean in lorem eget dolor vehicula vehicula et eget sapien.
+    </p>
+    <h3>Referências</h3>
+
+    <p>
+        Nam at ex in quam porttitor sodales. Aenean semper, sapien id posuere dapibus, lectus mauris ultricies ante, id vehicula lorem tortor non lorem. Donec sodales sollicitudin felis, eu tincidunt nisi sollicitudin sit amet.    </p>
+    
+    <!--Less-->  
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script>
+        less = {
+            env: "development" /* pode ser prodution - se for development mostra erros no 
+            console */
+        }
+    </script>    
+
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('generate-sw.js');
+    }
+    </script>
+</body>
+</html>

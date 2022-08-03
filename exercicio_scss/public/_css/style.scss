@@ -1,0 +1,40 @@
+@import 'shadow', 'letras', 'div';
+
+$tamanhoFonte: 17px;
+$color: cornsilk; 
+$position_y: 1.5;
+$tamanhoFonte2: '30';
+
+@mixin  letras2($aumento) {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    font-size: #{$tamanhoFonte2+px};
+    font-style: normal;
+    font-variant: small-caps;
+    @if ($aumento == 's') {
+        font-size: $tamanhoFonte * 2.2; 
+    } else {
+        font-size: $tamanhoFonte;
+    }
+}
+
+h1, h2 {
+    @include letras2('s');
+}
+
+h3 {
+    @include letras2('');
+}
+
+body{
+    background-color: rgb(238, 235, 235);
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: 
+        url("logo.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: percentage($position_y);
+    background-position-x: center; 
+    background-size: 120px 120px; 
+}
+
+

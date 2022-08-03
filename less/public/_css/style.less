@@ -1,0 +1,52 @@
+@cor: blue; // Variável
+@cor2: greeen;
+@cor3: white;
+@width: 0.50; // Largura;
+
+h1 {
+    .cores();
+    .letras(20px, 'h1');
+}
+
+p {
+    .cores();
+    // Função de conversão para porcentagem
+    width: percentage(@width); 
+    .letras(20px, '');
+    b { 
+        color: @cor3;
+        .background_color();
+    }
+    
+}
+
+h2 {
+    // Passar um parâmetro, se for uma cor válida, irá pegar a cor
+    // Se não for uma cor, irá passar a cor vermelho
+    // Preto, cor default
+    color: if(iscolor(@cor2), @cor2, red);
+    font-size: 10px * 3;
+}
+
+// Mixins -> Parecido com função
+.cores() {
+    // O color será a cor que está armazenado na variável (otimizar seu uso)
+    color: @cor;
+}
+
+.background_color() {
+    background-color: green;
+}
+
+// Parâmetro que será passado quando chamar a função para ter variações de tamanho
+.letras(@tamanho, @tag) {
+    font: arial;
+    font-size: @tamanho * 1.2;
+    font-variant: small-caps;
+    // Se @tag for igual a h1 então adicione esse estilo
+    & when (@tag = 'h1') {
+        text-shadow: 2px 1px 1px #7a7b7c;
+    }
+
+}
+
